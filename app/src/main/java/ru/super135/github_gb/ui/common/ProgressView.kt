@@ -1,11 +1,11 @@
-package ru.super135.github_gb.ui.users
+package ru.super135.github_gb.ui.common
 
-import moxy.MvpView
 import moxy.viewstate.strategy.AddToEndSingleStrategy
 import moxy.viewstate.strategy.StateStrategyType
 
+
 @StateStrategyType(AddToEndSingleStrategy::class)
-interface MainView : MvpView {
-    fun init()
-    fun updateList()
+interface ProgressView {
+    fun showProgressBar()
+    fun hideProgressBar()
 }
